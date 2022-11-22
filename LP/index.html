@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ぶかぱぁ～</title>
+  <link rel="stylesheet" href="style/style.css">  
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- icon -->
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&display=swap" rel="stylesheet">
+  <!-- font -->
+
+</head>
+<body>
+<div class="background">
+<img src="image/ツイッタースカウトバナー四角.jpg" alt="" class="full">
+<div class="title1">
+<img src="image\a.png" alt="" class="full">
+</div>
+<div class="san_box">
+
+<div class="cast"> 
+    <div class="slider">
+        <div class="slick-img"><img src="image\バナー\banner01.png" alt=""></div>
+        <div class="slick-img"><img src="image\バナー\banner02.png" alt=""></div>
+        <div class="slick-img"><img src="image\バナー\banner03.png" alt=""></div>
+        <div class="slick-img"><img src="image\バナー\banner04.png" alt=""></div>
+    </div>
+  </div>
+
+<!-- コンテンツ中 -->
+<!-- 
+  <div class="bg-color">
+  <div class="box19">
+    <h1 class="san_t_a">#当ってませんか？</h1>
+</div>
+
+<div class="che">
+<br><input type="checkbox" name="name" value="value">
+お客さんから過剰サービスを求められる
+<br><input type="checkbox" name="name" value="value">
+オプション交渉をするのが嫌だ
+<br><input type="checkbox" name="name" value="value">
+オプション料金をもらえない
+<br><input type="checkbox" name="name" value="value">
+掛け持ちで始めたいけど、不安
+</div>
+<hr>
+
+<br>
+ひとつでも当てはまっていたら、一度お問い合わせください。
+損している可能性があります。
+<br><br>
+</div>
+</div> -->
+
+<!-- コンテンツ中 -->
+<!-- 不安解消 -->
+<!-- <img src="image\かじょうなし.png" alt="" class="bg2">
+
+すぐに稼げるの？未経験でも働ける？
+会員顧客数には自信がありグループ全体で100万人！出勤さえしていただければお仕事が付きますし必ず稼がせることをお約束します！
+
+お客様はどんな人？怖くないですか？
+
+顧客管理システムを導入しており身元の明らかな優良会員のお客様だけ！風俗経験のある女の子はもちろん未経験の女の子でも安心安全に働けるお店作りを目指しております。
+ちなみに当店で働く女の子の90%が未経験からのスタートです！
+
+可愛くないけど働ける？見た目に自信がないです・・・
+
+当グループが求めるのは普通の女の子です。容姿よりも内面的な部分を重視し合否を判断しております。
+その証拠に当店の採用率は90%以上！少しだけ勇気を出して応募してみてください！-->
+<!-- 不安解消 -->
+
+
+<!-- 給料 -->
+<!-- <img src="image\見出し\給料.png" alt="" class="full"> -->
+<div class="slider-001">
+  <!-- contents1 -->
+  <div class="slide-001">
+    <div class="slide-content-001"><img src="image\給与の例\27.jpg" class="full_job"></div>
+    <div class="slide-caption-001"></div>
+  </div>
+  <!-- contents2 -->
+  <div class="slide-001">
+    <div class="slide-content-001"><img src="image\給与の例\37.jpg" class="full_job"></div>
+    <div class="slide-caption-001"></div>
+  </div>
+  <!-- contents3 -->
+  <div class="slide-001">
+    <div class="slide-content-001"><img src="image\給与の例\93.jpg" class="full_job"></div>
+    <div class="slide-caption-001"></div>
+  </div>
+</div>
+<script>
+  const sliders = document.querySelectorAll(".slider-001");
+  
+  sliders.forEach((slider, cont_slider) => {
+    let slideIndex = 1;
+    let slides = slider.querySelectorAll(".slide-001");
+    let prev = document.createElement("span");
+    prev.classList.add("prev-001");
+    prev.innerHTML = "&#10094;";
+    slider.append(prev);
+    let next = document.createElement("span");
+    next.classList.add("next-001");
+    next.innerHTML = "&#10095;";
+    slider.append(next);
+  
+    let dots = document.createElement("div");
+    dots.classList.add("dots");
+    slider.append(dots);
+  
+    slides.forEach((slide, cont_slide) => {
+      let dot = document.createElement("span");
+      dot.classList.add("dot");
+      dots.append(dot);
+      dot.addEventListener("click", (e) => {
+        slideIndex = cont_slide + 1;
+        slides.forEach((slide, cont_slide) => {
+          slide.style = "left: -" + (slideIndex - 1) * 100 + "%;";
+        });
+      });
+  
+      let numberText = document.createElement("div");
+      numberText.classList.add("numbertext");
+      numberText.innerText = cont_slide + 1 + "/" + slides.length;
+      slide.insertAdjacentElement("afterbegin", numberText);
+    });
+  
+    next.addEventListener("click", (e) => {
+      slideIndex == slides.length ? (slideIndex = 1) : slideIndex++;
+      slides.forEach((slide, cont_slide) => {
+        slide.style = "left: -" + (slideIndex - 1) * 100 + "%;";
+      });
+    });
+  
+    prev.addEventListener("click", (e) => {
+      slideIndex == 1 ? (slideIndex = slides.length) : slideIndex--;
+      slides.forEach((slide, cont_slide) => {
+        slide.style = "left: -" + (slideIndex - 1) * 100 + "%;";
+      });
+    });
+  });
+</script>
+<!-- 給料 -->
+</div>
+
+<p class="salaryTitle">①コースバック</p>
+
+<div class="table">
+  <table>
+    <tr>
+      <th>コース</th>
+      <th class="popular"><span class="inner"><span class="no1">人気No.1</span>お給料</span></th>
+    </tr>
+    <tr>
+      <td>45分</td>
+      <td class="popular">¥8,000</td>
+    </tr>
+    <tr>
+      <td>60分</td>
+      <td class="popular">¥10,000</td>
+    </tr>
+    <tr>
+      <td>75分</td>
+      <td class="popular">¥12,000</td>
+    </tr>
+    <tr>
+      <td>90分</td>
+      <td class="popular">¥14,000</td>
+    </tr>
+    <tr>
+      <td>120分</td>
+      <td class="popular">¥16,000</td>
+    </tr>
+    <!-- <tr>
+      <td>保証なし</td>
+      <td class="popular">保証1ヶ月</td>
+    </tr>
+    <tr>
+      <td><a href="#">45分</a></td>
+      <td><a href="#">申し込み</a></td>
+    </tr> -->
+    
+  </table>
+</div>
+
+
+<p class="salaryTitle">②オプション <span class="textRed textLarge" style="font-size: 1.3em; font-weight: inherit; color: rgb(255, 93, 122);" >100<span class="textSmall" >%</span></span>バック</p>
+
+<div class="table">
+  <table>
+    <tr>
+      <th>オプション内容</th>
+      <th class="popular"><span class="inner"><span class="no1">人気No.1</span>お給料</span></th>
+    </tr>
+    <tr>
+      <td>ソフトタッチ</td>
+      <td class="popular">¥1000</td>
+    </tr>
+    <tr>
+      <td>フルパック</td>
+      <td class="popular">¥3,000</td>
+    </tr>
+    <tr>
+      <td>撮影(顔無し)…ect</td>
+      <td class="popular">¥5,000</td>
+    </tr>
+  </table>
+</div>
+ 
+  
+
+  <p class="salaryTitle">③指名料<span style="font-size: 1.3em; font-weight: inherit; color: rgb(255, 93, 122);">100<span >%</span></span>バック</p>
+<div class="salary">
+ <p>
+  <span style="font-weight: bold;font-size: 2.1rem;">
+  ①+②+③
+</span>
+  の合計がお給料に!
+</p>
+</div>
+  
+  <p>お仕事1本の平均オプションは<span class="textRed textLarge" style="font-size: 1.3em; font-weight: inherit; color: rgb(255, 93, 122);">3,500<span class="textSmall" style="font-size: 0.8em; letter-spacing: 1px; font-weight: inherit;">円</span>!!</span><br>
+    対応オプションが多いほど<span class="textRed textLarge" style="font-size: 1.3em; font-weight: inherit; color: rgb(255, 93, 122);">稼げる</span>システムです。</p>
+
+<!--****************仕事の流れ******************-->
+<img src="image\見出し\おしごと.png" alt="" class="full">
+<div class="bg-color" style="background-image: linear-gradient(-45deg, transparent, transparent 25%, rgb(255, 248, 210) 25%, rgb(255, 248, 210) 50%, transparent 50%, transparent 75%, rgb(255, 248, 210) 75%, rgb(255, 248, 210)); background-size: 20px 20px; padding: 4% 0px 1%;" id="flow">
+<img src="image\仕事流れ\①.png" alt="" class="full_job">
+<img src="image\仕事流れ\②.png" alt="" class="full_job">
+<img src="image\仕事流れ\③.png" alt="" class="full_job">
+<img src="image\仕事流れ\④.png" alt="" class="full_job">
+<img src="image\仕事流れ\⑤.png" alt="" class="full_job">
+</div>
+<!--****************仕事の流れ******************-->
+<img src="image\見出し\お問合せ.png" alt="" class="full">
+<!-- <div class="box26">
+<span class="box-title">今だけ特典</span>
+<p>ここに文章ここに文章ここに文章ここに文章ここに文章ここに文章ここに文章</p>
+</div> -->
+<!-- ********************フォーム******************** -->
+  
+
+
+
+<form class="" action="https://script.google.com/macros/s/AKfycbwS4ii4jPzmLz90JPqYqqTbmu1UZoC6M-lxEk74QhQ4RsFE0yEi/exec" method="post">
+  <div class="item">
+    <label class="label">お名前</label>
+    <input class="inputs" type="text" name="name">
+  </div>
+  <div class="item">
+    <label class="label">メアド</label>
+    <input class="inputs" type="email" name="email">
+  </div>
+
+  <div class="item">
+    <p class="label">経験</p>
+    <div class="inputs">
+    <input id="cut" type="radio" name="menu" value="cut"><label for="cut">有り</label>
+    <input id="cut-color" type="radio" name="menu" value="cut-color"><label for="cut-color">なし</label>
+    <input id="headspa" type="radio" name="menu" value="headspa"><label for="headspa">不明</label>
+    </div>
+  </div>
+
+  <div class="item">
+    <label class="label">ライン</label>
+    <a href="https://line.me/ti/p/r9_LaVhHEn"><img src="image\howto_content1.png" alt="ライン追加" class="line"></a>
+  </div>
+  
+  <div class="item">
+    <label class="label">ご意見</label>
+    <textarea class="inputs"></textarea>
+  </div>
+
+  <div class="btn-area">
+    <input type="submit" value="送信する"><input type="reset" value="リセット">
+  </div>
+
+</form>
+
+
+
+<!-- ********************フォーム******************** -->
+
+
+<hr>
+  <!-- バニラこぴぺ  -->
+  <dl class="banira">
+    <div class="left">
+      <span class="material-symbols-outlined">badge</span>
+      <dt class="eligible">応募資格</dt>
+    </div>
+
+    <dd class="side_text">18歳以上（高校生不可）<br>※経験、未経験不問</dd>
+    
+    <div class="left">
+      <span class="material-symbols-outlined">payments</span>
+      <dt class="money">給与</dt>
+    </div>
+     
+    <dd class="side_text"><em>日給<span>35,000円</span>以上</em><br>※当日全額日払い制</dd>
+    
+    <div class="left">
+      <span class="material-symbols-outlined">location_on</span>
+      <dt class="area">勤務地</dt>
+    </div>
+    
+    <dd class="side_text">吉祥寺駅のみ</dd>
+    
+    <div class="left">
+      <span class="material-symbols-outlined">schedule</span>
+      <dt class="time">勤務時間</dt>
+    </div>
+    
+      <dd class="side_text">営業時間内でご希望の時間帯でOK</dd>
+    
+    <div class="left">
+      <span class="material-symbols-outlined">calendar_month</span>
+      <dt class="day">勤務日</dt>
+    </div>
+
+      <dd class="side_text">自由出勤制／空いてる日でOK</dd>
+    
+    <div class="left">
+      <span class="material-symbols-outlined">door_open</span>
+    <dt class="open">営業時間</dt>
+    </div>
+
+      <dd class="side_text">11:00 ～ 23:30</dd>
+    
+    <div class="left">
+      <span class="material-symbols-outlined">tram</span>  
+      <dt class="transport">交通</dt>
+    </div>
+    
+      <dd class="side_text">JR・京王井之頭線　吉祥寺駅</dd>
+
+    <div class="left">
+      <span class="material-symbols-outlined">storefront</span>
+      <dt class="address">所在地</dt>
+    </div>
+    
+      <dd class="side_text">東京都武蔵野市吉祥寺</dd>
+    
+    <div class="left">
+      <span class="material-symbols-outlined">desktop_windows</span>
+      <dt class="site">サイト</dt>
+    </div>
+    
+      <dd class="side_text">お客様用サイトを見る</dd>
+    
+    <div class="left">
+      <span class="material-symbols-outlined">payments</span>
+      <dt class="money-warn-ttl"><span>給与</span></dt>
+    </div>
+
+    <dd class="side_text"><p>出勤状況により金額は変わる場合もございます。</p></dd>
+  </dl>
+<h2>
+  #詳しくはお店にお問合せください。
+</h2>
+<!-- バニラこぴぺ  -->
+</div>
+<script type="text/javascript" src="javascript/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="javascript/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick\slick.min.js"></script>
+<script type="text/javascript" src="javascript\main.js"></script>
+</body>
+</html>
+

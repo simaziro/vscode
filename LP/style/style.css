@@ -1,0 +1,672 @@
+
+ /* 共通 */
+
+ .bg-color{
+  margin: -0.4em 0.8em 0 0.8em;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1em 0.8em 1em 0.8em;
+  
+}
+
+body {  
+  width: 100%;
+  height: 240px;
+
+}
+
+.background {
+  background-color: #ccefef;
+  text-align: center;
+  height: 340em;  
+}
+
+  .full {
+      width: 100%;
+      height: auto;
+    }
+
+  .bg2{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 0 1em 0 1em;
+  }
+    
+  .full_job {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    padding: 1.4em 1em 1.4em 1em;
+  }
+
+  .title1{
+    position: absolute;
+    width: 40%;
+    top: 31%;
+    left: 30%;
+    z-index: 2;
+  }
+
+  h1 {
+    font-weight: bold;
+    padding: 1em 0 2em 0;
+  }
+
+  
+  h2 {
+    font-family: 'Kaisei Opti', serif;
+    position: relative;
+    display: inline-block;
+    font-size: 2px;
+    margin-bottom: 1em;
+    padding: 1em 0 2em 0;
+  }
+  h2:before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    display: inline-block;
+    width: 60px;
+    height: 5px;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #62625a;
+    border-radius: 2px;
+  }
+
+ 
+  .check1 {
+    position: relative;
+    padding-left: .8em;/*アイコン表示用のスペース*/
+  }
+  
+  .check1::before {
+    content: "\f00c"; /*アイコンのユニコード*/
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    font-size: 0.6em; /*アイコンの大きさ*/
+    left: 0; /*アイコンの位置（左右）*/
+  
+  
+  /*アイコンと文字を天地中央揃え*/
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: #9abfe9; /*アイコンの色*/
+  }
+  
+
+  .box1 {
+    margin: -3em 15px 3em 15px;
+    background-color: #F3E6DF;
+    border-radius: 10px ;
+    padding: 1.4em 0 1.4em 0;
+    box-shadow: 0px 0px 36px 5px rgba(0,0,0,0.6);
+  }
+
+  /* ***********協調h2************* */
+  .box19 {
+    position: relative;
+    padding:0.25em 1em;
+    margin:3em 1em 2em 1em;  
+  }
+  .box19:before,.box19:after{ 
+    content:'';
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+  }
+  .box19:before{
+    border-left: solid 1px #1b1f35;
+    border-top: solid 1px #1b1f35;
+    top:0;
+    left: 0;
+  }
+  .box19:after{
+    border-right: solid 1px #1b1f35;
+    border-bottom: solid 1px #1b1f35;
+    bottom:0;
+    right: 0;
+  }
+  .box19 p {
+    margin: 0; 
+    padding: 0;
+  }
+  /* ***********協調h2************* */
+
+  /* ***********point************* */
+  .box26 {
+    position: relative;
+    margin: 0 0 4em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #95ccff;
+    border-radius: 8px;
+  }
+  .box26 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #f2ffff;
+    color: #95ccff;
+    font-weight: bold;
+  }
+  .box26 p {
+    margin: 0; 
+    padding: 0;
+  }
+
+  /* ***********point************* */
+
+  /* ***********チェックボックス************ */
+.che{
+  text-align: left;
+  margin: 2em 2em;
+}
+
+  /* ***********チェックボックス************ */
+
+
+  hr {
+    border: 0;
+    height: 2px;
+    margin: 2em 2em;
+    background-image: repeating-linear-gradient(90deg, rgb(255, 255, 255) 0px, rgb(255, 255, 255) 4px, rgba(50, 44, 44, 0) 4px, rgba(255, 255, 255, 0) 12px);
+  }
+  h2{
+    text-decoration-color: #09000d  ;
+  }
+
+
+  /* ======================問い合わせフォーム===============================*/ 
+
+
+
+  .box1 p{
+    color: #96815D;
+    text-align: left;
+    margin: 0 1em 0 1em ;
+  }
+
+  
+
+
+  form{
+    width:85%;
+    margin:0 1em 0 1em;
+  }
+  .item{
+    overflow: hidden;
+    margin-left: 1em;
+    margin-bottom: 40px;
+  }
+  .label{
+    float: left;
+    width:60px;
+    text-align: left;
+    margin-right: 10px;
+    padding-left: 10px;
+    border-left: solid 3px #e0505d;
+  }
+
+  .line{
+    width:170px;
+  }
+  .inputs{
+    float: left;
+    width:200px;
+    margin-left: 20px;
+  }
+  input[type="text"],input[type="email"]{
+    border: solid 1px #aaa;
+    border-radius:5px;
+    padding:10px;
+    font-size: 15px;
+  }
+  textarea{
+    border: solid 1px #aaa;
+    border-radius:5px;
+    padding: 10px;
+    height: 160px;
+    font-size: 15px;
+  }
+  .btn-area{
+    text-align: center;
+  }
+  input[type="submit"]{
+    background: #e0505c;
+    border: none;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+  }
+  input[type="reset"]{
+    background: #aaa;
+    border: none;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+  }
+
+
+  /* ======================問い合わせフォーム===============================*/ 
+
+
+  .slide_cont{
+    white-space:nowrap;
+   }
+  
+  /* ======================トップのセクション区切り===============================*/ 
+
+  .pg-top-works__header__title {
+    text-transform: uppercase;
+    font-family: var(--font-Cantarell);
+    font-weight: 700;
+    line-height: calc( var(--line-height) * 1em);
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-rendering: auto;
+    z-index: 2;
+  }
+
+
+  .san_box {
+    position: relative;
+    text-align: center;
+
+    /* margin: -2em 0 30px; */
+  }
+  .san_box:before {
+    content: "";
+    width: 0;
+    height: 0;
+    line-height:0;
+    /* vertical-align: baseline; */
+    border-style: solid;
+    border-width: 0 50vw 60px 50vw;
+    border-color: transparent transparent #ccefef transparent;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+  }
+  .san_t_a {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 1em 0 1em 5px;
+  }
+  .san_t_b {
+    color: #000000;
+    font-size: 24px;
+    margin: 5px 0 1em 5px;
+  }
+
+
+  /* =====================給料====================== */
+  .slider-001 {
+    width: 100%;
+    position: relative;
+    margin: 3em 0 2em 0;
+    overflow: hidden;
+    display: flex;
+    border-radius: 6px;
+    
+  }
+  
+  .slide-001 {
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .slide-content-001 {
+    width: 100%;
+    height: 400px;
+    /* background-color: #c8e4ff; */
+  }
+  
+  .slide-content-001 img {
+    width:100%;
+    object-fit: cover;
+    height: 100%;
+  }
+  
+  .prev-001,
+  .next-001 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    height: 65px;
+    padding: 16px;
+    margin-top: -28px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.2s ease;
+    border-radius: 0 4px 4px 0;
+    user-select: none;
+  }
+  
+  .next-001 {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .prev-001:hover,
+  .next-001:hover {
+    background-color: rgba(107, 182, 255, 0.8);
+  }
+  
+  .slide-caption-001 {
+    color: rgb(235, 216, 51);
+    font-size: 15px;
+    padding: 0;
+    position: absolute;
+    bottom: 31px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .numbertext {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px 16px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dots {
+    height: 15px;
+    padding: 0;
+    position: absolute;
+    bottom: 22px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 10px 4px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.2s ease;
+  }
+  
+  .dot:hover {
+    background-color: rgba(107, 182, 255, 0.8);
+  }
+  /* =====================給料====================== */
+
+  /* =====================スライダー====================== */
+
+  .cast .slick-slide {
+    width: 300px;
+    height: auto;
+    margin: 0 1em 0 0;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .slick-img img {
+      height: auto;
+      border-radius: 14px;
+      opacity: .5;
+      transform: scale(.6);
+      transition: opacity .7s, transform 1.1s;
+      width: 100%;
+    }
+
+      /* 中央のスライド */
+      .slider .slick-center img {
+          opacity: 1;
+          transform: scale(1);
+      }
+
+
+  .cast .slick-arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 90%;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 0;
+    position: absolute;
+    top: 200px;
+    z-index: 1;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+  }
+  .cast .slick-arrow::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #09000d;
+    border-width: 3px 3px 0 0;
+    position: absolute;
+    top: 14px;
+    transform: rotate(45deg);
+  }
+  .cast .slick-next {
+    right: 0;
+  }
+  .cast .slick-prev {
+    left: 0;
+  }
+  .cast .slick-next::before {
+    left: 10px;
+  }
+  .cast .slick-prev::before {
+    border-width: 0 0 3px 3px;
+    right: 10px;
+  }
+  /* =====================スライダー====================== */
+
+  /* =====================中断の説明====================== */
+  .box2 {
+    --x-gradient: linear-gradient(90deg, #6be5ec 0 25px, transparent 0 calc(100% - 25px), #6be5ec calc(100% - 25px));
+    --y-gradient: linear-gradient(#6be5ec 0 25px, transparent 0 calc(100% - 25px), #6be5ec calc(100% - 25px));
+    margin: 0.5rem;
+    padding: 1rem;
+    outline: 2px solid;  
+    color: #62625a;
+    outline-offset: -5px;
+    background-image:
+        var(--x-gradient),
+        var(--y-gradient),
+        var(--x-gradient),
+        var(--y-gradient);
+    background-repeat: no-repeat;
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+    background-position: top, right, bottom, left;
+    margin:4em 1em 6em 1em;
+  }
+
+  .box2 p {
+    line-height: 1.5;
+    color: #222;
+  }
+  /* =====================中断の説明====================== */ 
+
+
+  /* バニラコピペ */
+
+  .banira{
+    margin: 3em 0 3em 0;
+  }
+
+  .left{
+    margin:0 22em 0 0;
+    text-align: center;
+    font-size: 13px;
+    position: relative;
+    fill: #fff;
+  }
+
+  dd.side_text {
+    display: inline-block;
+    width: 270px;
+    vertical-align: top;
+    text-align: left;
+    margin-left: 70px;
+    margin-top: -50px;
+  }
+
+/*-----------------------------
+ 求人情報
+---------------------------- */
+
+.salaryTitle{
+  margin: 1em 0 0.4em 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: rgb(255, 255, 255) 3px 3px 2px, rgb(255, 255, 255) -3px -3px 2px, rgb(255, 255, 255) -3px 3px 2px, rgb(255, 255, 255) 3px -3px 2px, rgb(255, 255, 255) 0px 3px 2px, rgb(255, 255, 255) 0px -3px 2px, rgb(255, 255, 255) -3px 0px 2px, rgb(255, 255, 255) 3px 0px 2px;
+  color: rgb(122, 197, 255);
+  position: relative;
+  z-index: 1;
+}
+
+.salary{
+  text-align: center;
+  font-weight: bold;
+  text-shadow: rgb(255, 255, 255) 3px 3px 2px, rgb(255, 255, 255) -3px -3px 2px, rgb(255, 255, 255) -3px 3px 2px, rgb(255, 255, 255) 3px -3px 2px, rgb(255, 255, 255) 0px 3px 2px, rgb(255, 255, 255) 0px -3px 2px, rgb(255, 255, 255) -3px 0px 2px, rgb(255, 255, 255) 3px 0px 2px;
+  color: rgb(48, 49, 50);
+
+}
+
+.lage{
+  font-weight: bold;
+  font-size: 2.1rem;
+}
+
+.salaryText{
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+.table{
+  color: rgb(51, 51, 51);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  table-layout: fixed;
+  width: 490px;
+  margin: 0 1em 0 1em;
+}
+
+table ul{
+  border: 1px 
+  solid rgb(122, 197, 255); 
+
+
+  color: rgb(51, 51, 51); 
+  display: flex; 
+  flex-wrap: wrap; 
+  padding: 5% 0 0 0;
+}
+
+table tr:last-child{
+  border-bottom:solid 1px #ddd;
+}
+
+table th{
+  text-align: center;
+  padding: 10px 0;
+  border-right:solid 1px #ddd;
+  border-left:solid 1px #ddd;
+
+}
+
+table th:nth-child(1){
+  background-color:#dddddd;
+}
+
+
+table tr:nth-child(3) td{
+  font-size: 30px;
+  font-weight: bold;
+  background-color:#d11f6cc1;
+  color: white;
+}
+
+table td{
+  text-align: center;
+  padding: 7px 0;
+  border-right:solid 1px #ddd;
+  border-left:solid 1px #ddd;
+  width: 155px;
+}
+
+table td a{
+  background-color: #25b327;
+  color: white;
+  padding:5px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+table .popular{
+  width: 180px;
+}
+
+table th.popular{
+  position: relative;
+}
+
+table th.popular span.no1{
+  position: absolute;
+  top: 75px;
+  left:calc(50% - 30px);
+  background: #e7f272;
+  width: 60px;
+  font-size: 10px;
+  border-radius: 15px;
+  line-height: 1;
+  padding: 5px;
+}
+
+table th.popular span.inner{
+  position: absolute;
+  color:black;
+  background-color: #dddddd;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 180px;
+  padding: 10px 0;
+}
+
+
+  /* バニラコピペ */
