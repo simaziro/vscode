@@ -540,7 +540,7 @@ body {
 .salaryTitle{
   margin: 1em 0 0.4em 0;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   text-shadow: rgb(255, 255, 255) 3px 3px 2px, rgb(255, 255, 255) -3px -3px 2px, rgb(255, 255, 255) -3px 3px 2px, rgb(255, 255, 255) 3px -3px 2px, rgb(255, 255, 255) 0px 3px 2px, rgb(255, 255, 255) 0px -3px 2px, rgb(255, 255, 255) -3px 0px 2px, rgb(255, 255, 255) 3px 0px 2px;
   color: rgb(122, 197, 255);
@@ -615,7 +615,7 @@ table th:nth-child(1){
 
 
 table tr:nth-child(3) td{
-  font-size: 30px;
+  font-size: 27px;
   font-weight: bold;
   background-color:#d11f6cc1;
   color: white;
